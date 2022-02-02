@@ -15,13 +15,13 @@ Example:
 
 Building a .a library
 ```
-./scripts/generate_static_library.sh request_review debug 3.4
-./scripts/generate_static_library.sh request_review release 3.4
+./scripts/release_static_library.sh 3.4
+./scripts/release_static_library.sh 3.4
 ```
 
 Copy a.library to Godot plugin directory
 ```
-cp ./bin/request_review.*.a $GODOT_HOME/ios/plugins/request_review/bin/
+cp bin/release/request_review/request_review.*.a $GODOT_HOME/ios/plugins/request_review/bin/
 cp request_review.gdip $GODOT_HOME/ios/plugins/
 ```
 
