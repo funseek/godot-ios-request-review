@@ -34,3 +34,5 @@ DerivedData/
 ## Godot Plugins
 godot_headers/*
 bin/*
+tmp
+create_archive.sh
