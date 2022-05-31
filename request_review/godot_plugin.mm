@@ -10,19 +10,19 @@
 #import "request_review.h"
 #import "core/engine.h"
 
-RequestReview *plugin;
+RequestReview *request_review_plugin;
 
 void godot_plugin_init() {
     NSLog(@"init RequestReview plugin");
 
-    plugin = memnew(RequestReview);
-    Engine::get_singleton()->add_singleton(Engine::Singleton("RequestReview", plugin));
+    request_review_plugin = memnew(RequestReview);
+    Engine::get_singleton()->add_singleton(Engine::Singleton("RequestReview", request_review_plugin));
 }
 
 void godot_plugin_deinit() {
     NSLog(@"deinit RequestReview plugin");
     
-    if (plugin) {
-       memdelete(plugin);
+    if (request_review_plugin) {
+       memdelete(request_review_plugin);
    }
 }
