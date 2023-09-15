@@ -8,7 +8,11 @@
 #ifndef request_review_h
 #define request_review_h
 
+#if VERSION_MAJOR == 4
+#include "core/object/class_db.h"
+#else
 #include "core/object.h"
+#endif
 
 class RequestReview : public Object {
     GDCLASS(RequestReview, Object);

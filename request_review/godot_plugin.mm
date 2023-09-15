@@ -7,8 +7,14 @@
 
 #import <Foundation/Foundation.h>
 
+#include "core/version.h"
+
 #import "request_review.h"
-#import "core/engine.h"
+#if VERSION_MAJOR == 4
+#include "core/config/engine.h"
+#else
+#include "core/engine.h"
+#endif
 
 RequestReview *request_review_plugin;
 

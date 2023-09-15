@@ -5,8 +5,15 @@
 //  Created by YamazakiAkio on 2022/01/30.
 //
 
+#include "core/version.h"
+
+#if VERSION_MAJOR == 4
+#include "core/object/class_db.h"
+#include "core/config/project_settings.h"
+#else
 #include "core/project_settings.h"
 #include "core/class_db.h"
+#endif
 
 #import <StoreKit/StoreKit.h>
 #import "request_review.h"

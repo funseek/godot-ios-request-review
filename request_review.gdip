@@ -1,6 +1,6 @@
 [config]
 name="RequestReview"
-binary="request_review/bin/request_review.a"
+binary="request_review/bin/request_review.xcframework"
 
 initialization="godot_plugin_init"
 deinitialization="godot_plugin_deinit"
